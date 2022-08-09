@@ -5,11 +5,11 @@ const Styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#2a2a2a",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
   },
 
   title: {
-    marginTop:100,
+    marginTop:50,
     color: "#fff",
     fontSize: 36,
   },
@@ -17,8 +17,8 @@ const Styles = StyleSheet.create({
   subTitle: {
     color: "#bbb",
     fontSize: 18,
-    width: "50vw",
-    marginTop: "20px",
+    width: 300,
+    marginVertical: 20,
 
     textAlign: "center",
   },
@@ -48,7 +48,7 @@ const Styles = StyleSheet.create({
     borderRadius: 5,
     padding: 20,
     backgroundColor: "#fff",
-    width: "45vw",
+    width: 300,
   },
 
   selectBox: {
@@ -58,7 +58,7 @@ const Styles = StyleSheet.create({
     borderRadius: 5,
 
     backgroundColor: "#fff",
-    width: "45vw",
+    width: 300,
   },
 
   selectText: {
@@ -85,7 +85,7 @@ const Styles = StyleSheet.create({
     borderRadius: 4,
     elevation: 3,
     backgroundColor: '#8e05c2',
-    width: '30vw'
+
   },
   buttonText: {
     fontSize: 16,

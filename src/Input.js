@@ -1,18 +1,19 @@
 import React from "react";
 import { View, Text, TextInput, Button, Pressable } from "react-native";
 import SelectList from "react-native-dropdown-select-list";
+import tituloFilme from "./generator";
 
 import Styles from "./styles";
 const InputSection = () => {
   const [text, onChangeText] = React.useState("");
-  const [number, onChangeNumber] = React.useState(null);
-  const categories = ["Filmes", "Séries"];
-  const [selected, setSelected] = React.useState("");
 
+  const [selected, setSelected] = React.useState("");
+  
   const data = [
-    { key: "1", value: "Filmes" },
-    { key: "2", value: "Séries" },
+    { key: "filmes", value: "Filmes" },
+    { key: "series", value: "Séries" },
   ];
+  console.log(tituloFilme(text, data[0].key))
   return (
     <View style={Styles.container}>
       <TextInput
@@ -20,9 +21,11 @@ const InputSection = () => {
         onChangeText={onChangeText}
         value={text}
         placeholder="Digite uma palavra"
+        onChange={(event) => console.log(event.target.value)}
       />
 
       <SelectList
+        select
         data={data}
         setSelected={setSelected}
         boxStyles={Styles.selectBox}
@@ -30,10 +33,15 @@ const InputSection = () => {
         dropdownStyles={[Styles.dropdownList]}
         dropdownItemStyles={{ marginHorizontal: 20 }}
         dropdownTextStyles={Styles.dropdownText}
+        maxHeight={110}
         placeholder="Selecione uma categoria"
+        onChange={event=>console.log(event.target)}
       />
-      <Pressable style={Styles.button} onPress={()=>console.log("button pressed")}>
-        <Text style={Styles.buttonText}>Teste</Text>
+      <Pressable
+        style={Styles.button}
+        onPress={() => console.log("button pressed")}
+      >
+        <Text style={Styles.buttonText}>Gerar Novo Título!</Text>
       </Pressable>
     </View>
   );
