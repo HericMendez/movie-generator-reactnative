@@ -9,7 +9,7 @@ import Styles from "./src/styles";
 export default function App() {
   return (
     <SafeAreaView style={Styles.container}>
-      <Text style={Styles.title}>Gerador de Filme Aleatório</Text>
+      <Text style={Styles.title}>Movie Meme Generator</Text>
       <Text style={Styles.subTitle}>
         Digite uma palavra para substituir parte de um título aleatório de filme
         (ou qualquer outra categoria de obra de entretenimento) - e veja o
@@ -21,3 +21,5 @@ export default function App() {
     </SafeAreaView>
   );
 }
+//'./src/assets/icone-192x192.png'
+//'./src/assets/splash.png'

@@ -1,10 +1,26 @@
 {
   "expo": {
-    "name": "rn-app",
-    "slug": "rn-app",
+    "name": "movie-meme-generator",
+    "slug": "movie-meme-generator",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "privacy": "public",
+    "assetBundlePatterns": ["**/*"],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "orientation": "portrait",
+    "icon": "./src/assets/icone-192x192.png",
+
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "bacgkgroundColor": "#191a19"
+    },
+
+    "platforms": ["android", "web"],
+
+    "android": {
+      "package": "com.hericmendez.movie_meme_generator"
+    }
   }
 }
