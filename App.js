@@ -1,9 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { View, SafeAreaView} from "react-native";
+import { SafeAreaView } from "react-native";
 import InputSection from "./src/Input";
-import { Text} from "@react-native-material/core";
-
+import { Text } from "@react-native-material/core";
 
 import Styles from "./src/styles";
 

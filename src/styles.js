@@ -9,9 +9,10 @@ const Styles = StyleSheet.create({
   },
 
   title: {
-    marginTop:50,
+    marginTop: 100,
     color: "#fff",
     fontSize: 36,
+    textAlign: "center",
   },
 
   subTitle: {
@@ -49,10 +50,10 @@ const Styles = StyleSheet.create({
     padding: 20,
     backgroundColor: "#fff",
     width: 300,
+    color: "#222",
   },
 
   selectBox: {
-
     marginTop: 12,
     borderWidth: 1,
     borderRadius: 5,
@@ -63,6 +64,7 @@ const Styles = StyleSheet.create({
 
   selectText: {
     paddingHorizontal: 0,
+    color: "#222",
   },
 
   dropdownList: {
@@ -72,27 +74,40 @@ const Styles = StyleSheet.create({
     backgroundColor: "gray",
   },
 
-  dropdownText:{
-    color: "#fff" 
+  dropdownText: {
+    color: "#fff",
   },
 
   button: {
     margin: 15,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     paddingVertical: 12,
     paddingHorizontal: 32,
     borderRadius: 4,
     elevation: 3,
-    backgroundColor: '#8e05c2',
-
+    backgroundColor: "#8e05c2",
   },
   buttonText: {
     fontSize: 16,
     lineHeight: 21,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     letterSpacing: 0.25,
-    color: 'white',
+    color: "white",
+  },
+
+  originalMovie: {
+    color: "#fff",
+    fontSize: 30,
+    width: 400,
+    padding: 10,
+    borderColor: "#fff",
+    textAlign: "center",
+  },
+
+  jokeMovie: {
+    color: "#ccc",
+    fontSize: 18,
   },
 });
 

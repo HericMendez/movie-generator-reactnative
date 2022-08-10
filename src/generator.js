@@ -18,6 +18,13 @@ const titulos = {
     "Kill Bill",
     "Cães de Aluguel",
   ],
+
+  series: [
+    "Todo Mundo Odeia o Chris",
+    "Eu, A Patroa e As Crianças",
+    "Um Maluco no Pedaço",
+    "The Big Bang Theory",
+  ],
 };
 
 const tituloFilme = (mod, cat) => {
