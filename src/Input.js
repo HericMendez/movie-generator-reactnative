@@ -3,7 +3,7 @@ import { View, Text, TextInput, Pressable } from "react-native";
 import SelectList from "react-native-dropdown-select-list";
 import { SafeAreaView } from "react-native";
 import tituloFilme from "./generator";
-import OutputMovies from "./Output";
+
 
 import Styles from "./styles";
 const InputSection = () => {
@@ -17,18 +17,18 @@ const InputSection = () => {
     { key: "series", value: "Séries" },
   ];
 
-  console.log(filmeObj);
+
   return (
     <SafeAreaView>
       <View style={Styles.container}>
         <TextInput
-          
           onChangeText={onChangeText}
           value={text}
           placeholder="Digite uma palavra"
           placeholderTextColor="#222"
-          autoCapitalize="true"
+          autoCapitalize="words"
           style={Styles.input}
+
 
         />
 
@@ -49,10 +49,9 @@ const InputSection = () => {
         >
           <Text style={Styles.buttonText}>Gerar Novo Título!</Text>
         </Pressable>
-        <Text style={Styles.originalMovie}>{filmeObj.original}</Text>
         <Text style={Styles.jokeMovie}>{filmeObj.alterado}</Text>
+        <Text style={Styles.originalMovie}>{filmeObj.original}</Text>
       </View>
-
     </SafeAreaView>
   );
 };

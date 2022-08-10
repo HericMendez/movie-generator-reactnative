@@ -47,7 +47,7 @@ const Styles = StyleSheet.create({
     margin: 15,
     borderWidth: 1,
     borderRadius: 5,
-    padding: 20,
+    paddingHorizontal: 20,
     backgroundColor: "#fff",
     width: 300,
     color: "#222",
@@ -96,16 +96,15 @@ const Styles = StyleSheet.create({
     color: "white",
   },
 
-  originalMovie: {
+  jokeMovie: {
     color: "#fff",
-    fontSize: 30,
+    fontSize: 32,
     width: 400,
     padding: 10,
     borderColor: "#fff",
     textAlign: "center",
   },
-
-  jokeMovie: {
+  originalMovie: {
     color: "#ccc",
     fontSize: 18,
   },
